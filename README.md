@@ -6,7 +6,7 @@
 
 ## Entity Relationship Diagram (ERD)
 
-![Schema_Diagram]()
+![Schema_Diagram](https://github.com/eggOnion/library_BookLoaningSystem/blob/main/Schema%20Diagram.png?raw=true)
 
 
 ## Cardinalities Relationship between `loan_period` and `learner` Table
