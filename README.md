@@ -74,6 +74,8 @@ A book is available for borrowed, and it is so popular that many learner wants t
 ***
 
 
+## Description of the App
+
 ### Book Table
 
 1. `availability` is based on the `quantity`. Eg; if (quantity == 0) then availability = FALSE
