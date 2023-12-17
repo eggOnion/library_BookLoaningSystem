@@ -1,7 +1,7 @@
 # Library-Booking-System 
 ***
 
-**A simple Library Loaning System to demostrate the RDBMS with Java in Spring Boot framework.**
+**A simple Library Loaning System to demostrate the RDBMS in Postgres with Java on Spring Boot framework.**
 
 
 ## Entity Relationship Diagram (ERD)
