@@ -29,6 +29,7 @@ http://localhost:8080/learners/
 
 ### 4. Using the Endpoints
 
+Inside Postman, use this as the basic authentication
 **login:**
 > username: user
 > <br>password: password
