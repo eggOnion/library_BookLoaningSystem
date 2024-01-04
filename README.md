@@ -92,13 +92,13 @@ mvn clean spring-boot:run
 
 ### 3. Reaching the Endpoints
 
-http://localhost:8080/learners/
-http://localhost:8080/books/
-http://localhost:8080/loanStatus/
+<br>http://localhost:8080/learners/
+<br>http://localhost:8080/books/
+<br>http://localhost:8080/loanStatus/
 
 **login:**
 > username: user
-> password: password
+> <br>password: password
 
 
 ### 4. Using the Endpoints: 
@@ -120,6 +120,8 @@ Using Postman and pass in this JSON under `POST` request
 }
 ```
 
+***
+
 ### 4.2 Books table
 
 **Adding new books:**
@@ -136,6 +138,7 @@ Using Postman and pass in this JSON under `POST` request
 }
 ```
 
+***
 
 ### 4.3 LoanPeriod table
 
