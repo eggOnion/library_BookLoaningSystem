@@ -92,7 +92,7 @@ mvn clean spring-boot:run
 
 ### 3. Reaching the Endpoints
 
-<br>http://localhost:8080/learners/
+http://localhost:8080/learners/
 <br>http://localhost:8080/books/
 <br>http://localhost:8080/loanStatus/
 
@@ -100,8 +100,9 @@ mvn clean spring-boot:run
 > username: user
 > <br>password: password
 
+***
 
-### 4. Using the Endpoints: 
+### 4. Using the Endpoints
 
 
 ### 4.1 Learners table
