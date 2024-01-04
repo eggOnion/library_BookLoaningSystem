@@ -70,10 +70,10 @@ Using Postman and pass in this JSON under `POST` request
 **Borrowing a book:**
 
 Change the `{learner_id}` to the available learner in the Learners table of your choice. 
-Change the `{book_id}` to the available book in the Books table of your choice. 
+<br>Change the `{book_id}` to the available book in the Books table of your choice. 
 
 Eg; learner_id: 1 is John Wick
-Eg; book_id: 1 is The Fellowship of the Ring
+<br>Eg; book_id: 1 is The Fellowship of the Ring
 
 ```
 {
