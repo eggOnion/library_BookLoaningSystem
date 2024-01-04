@@ -9,7 +9,8 @@ simple-library
 
 ### 2. Run the application
 
-Open up your terminal from the root folder, then run
+First, clone this Repo.
+<br>cd to the root folder of this app on your terminal, then run
 ```
 mvn clean spring-boot:run
 ```
@@ -41,7 +42,7 @@ Using Postman and pass in this JSON under `POST` request
     "firstName": "Bowery",
     "lastName": "King",
     "email": "boweryking@continental.com",
-    "contact_num": "99102139"
+    "contact_num": "12345678"
 }
 ```
 
@@ -72,8 +73,8 @@ Using Postman and pass in this JSON under `POST` request
 Change the `{learner_id}` to the available learner in the Learners table of your choice. 
 <br>Change the `{book_id}` to the available book in the Books table of your choice. 
 
-Eg; learner_id: 1 is John Wick
-<br>Eg; book_id: 1 is The Fellowship of the Ring
+Eg; `learner_id: 1` is John Wick<br>
+Eg; `book_id: 1` is The Fellowship of the Ring
 
 ```
 {
