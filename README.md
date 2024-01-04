@@ -74,31 +74,91 @@ A book is available for borrowed, and it is so popular that many learner wants t
 ***
 
 
-## Description of the App
+## Setup Instructions
 
-### Book Table
+### 1. Setup Postgres
 
-1. `availability` is based on the `quantity`. Eg; if (quantity == 0) then availability = FALSE
+Create this new database in your Postgres
+```
+simple-library
+```
 
-2. the `quantity` count will be compute over at `loan_period` table
+### 2. Run the application
 
-***
+Open up your terminal from the root folder, then run
+```
+mvn clean spring-boot:run
+```
+
+### 3. Reaching the Endpoints
+
+http://localhost:8080/learners/
+http://localhost:8080/books/
+http://localhost:8080/loanStatus/
+
+**login:**
+> username: user
+> password: password
 
 
-## Learner Table
-
-1. Can create new user accounts
-
-***
+### 4. Using the Endpoints: 
 
 
-## LoanPeriod Table
+### 4.1 Learners table
 
-1. The data type for `starttime` to `endtime` is `LocalDate`. 
+**Adding new learners:**
 
-2.  To compute the `quantity` count for the `book` table based on it's `loan_status`.
-    * Examples; 
-        * if the book is on `BORROWED` then **quantity=quantity-1**
-        * if the book is on `RETURNED` then **quantity=quantity+1**      
+http://localhost:8080/learners/
 
-***
+Using Postman and pass in this JSON under `POST` request
+```
+{
+    "firstName": "Bowery",
+    "lastName": "King",
+    "email": "boweryking@continental.com",
+    "contact_num": "99102139"
+}
+```
+
+### 4.2 Books table
+
+**Adding new books:**
+
+http://localhost:8080/books/
+
+Using Postman and pass in this JSON under `POST` request
+```
+{
+    "title": "Rich Dad Poor Dad",
+    "author": "Robert Kiyosaki",
+    "genre": "Personal Finance",
+    "quantity": 3
+}
+```
+
+
+### 4.3 LoanPeriod table
+
+**Borrowing a book:**
+
+Change the `{learner_id}` to the available learner in the Learners table of your choice. 
+Change the `{book_id}` to the available book in the Books table of your choice. 
+
+Eg; learner_id: 1 is John Wick
+Eg; book_id: 1 is The Fellowship of the Ring
+
+```
+{
+    http://localhost:8080/loanStatus/borrow/{learner_id}/{book_id}
+}
+```
+
+**Returning a book:**
+
+Using Postman and pass in this JSON under `PUT` request
+
+```
+{
+    http://localhost:8080/loanStatus/return/{loanStatus_id}
+}
+```
