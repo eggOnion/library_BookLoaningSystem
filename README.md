@@ -29,6 +29,9 @@ http://localhost:8080/learners/
 
 ### 4. Using the Endpoints
 
+**login:**
+> username: user
+> <br>password: password
 
 ### 4.1 Learners table
 
@@ -36,7 +39,7 @@ http://localhost:8080/learners/
 
 http://localhost:8080/learners/
 
-Using Postman and pass in this JSON under `POST` request
+Using Postman, pass in this JSON under `POST` request
 ```
 {
     "firstName": "Bowery",
@@ -54,7 +57,7 @@ Using Postman and pass in this JSON under `POST` request
 
 http://localhost:8080/books/
 
-Using Postman and pass in this JSON under `POST` request
+Using Postman, pass in this JSON under `POST` request
 ```
 {
     "title": "Rich Dad Poor Dad",
@@ -84,7 +87,7 @@ Eg; `book_id: 1` is The Fellowship of the Ring
 
 **Returning a book:**
 
-Using Postman and pass in this JSON under `PUT` request
+Using Postman, pass in this JSON under `PUT` request
 
 ```
 {
